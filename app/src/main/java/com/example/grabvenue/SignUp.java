@@ -14,12 +14,16 @@ public class SignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        // remove action bar
+        getSupportActionBar().hide();
+
         signup=findViewById(R.id.signupbtn);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(SignUp.this,"Sign up successful",Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(SignUp.this,MainActivity.class) );
+                startActivity(new Intent(SignUp.this,MainActivity.class));
             }
         });
 

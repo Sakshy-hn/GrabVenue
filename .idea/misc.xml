@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_add_venue.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_admin_all_venue.xml" value="0.22" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_admin_booking_history.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_admin_home.xml" value="0.25" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_admin_settings.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_home_page.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_main.xml" value="0.1388888888888889" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_sign_in.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_update_venue.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_user_account_settings.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_user_all_venue.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_user_booking_history.xml" value="0.27291666666666664" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_user_settings.xml" value="0.1" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/activity_venueitemlist.xml" value="0.22" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/layout/booking_dialog.xml" value="0.1" />
+        <entry key="..\:/210970093/GrabVenue/app/src/main/res/menu/menu.xml" value="0.27291666666666664" />
         <entry key="..\:/Android Project/GrabVenue/app/src/main/res/drawable/custbutton.xml" value="0.2595" />
         <entry key="..\:/Android Project/GrabVenue/app/src/main/res/drawable/custedittext.xml" value="0.181" />
         <entry key="..\:/Android Project/GrabVenue/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2595" />
@@ -23,6 +40,7 @@
         <entry key="..\:/Android Project/GrabVenue/app/src/main/res/layout/activity_venueitemlist.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Project/GrabVenue/app/src/main/res/layout/spinner_list.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Project/GrabVenue/app/src/main/res/layout/venueitemlist.xml" value="0.18020833333333333" />
+        <entry key="..\:/Project from Lab/GrabVenue/app/src/main/res/layout/activity_user_booking_history.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

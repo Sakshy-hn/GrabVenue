@@ -19,6 +19,9 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        // remove action bar
+        getSupportActionBar().hide();
+
         signup = findViewById(R.id.signup);
         signInBtn = findViewById(R.id.signInBtn);
         username = findViewById(R.id.username);

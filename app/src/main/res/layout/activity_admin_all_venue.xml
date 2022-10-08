@@ -7,24 +7,13 @@
     android:orientation="vertical"
     tools:context=".AdminAllVenue">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/lightblue"
-        android:text="All Venues"
-        android:padding="10sp"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"/>
-
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/searchHeader"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@color/ultralightblue"
@@ -53,9 +42,14 @@
         </LinearLayout>
 
         <ScrollView
+            android:id="@+id/scrollView2"
             android:layout_width="match_parent"
             android:layout_height="553dp"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchHeader"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -89,8 +83,8 @@
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textColor="@color/black"
                             android:text="Hockey Ground"
+                            android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -100,8 +94,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="Near Block 10, Eshwar Nagar" />
+                            android:text="Near Block 10, Eshwar Nagar"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -133,8 +127,8 @@
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textColor="@color/black"
                             android:text="Basket Ball Court"
+                            android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -144,9 +138,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="Near Block 10, Eshwar Nagar" />
-
+                            android:text="Near Block 10, Eshwar Nagar"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -179,8 +172,8 @@
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textColor="@color/black"
                             android:text="Cricket Ground"
+                            android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -190,8 +183,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="Near Block 10, Eshwar Nagar" />
+                            android:text="Near Block 10, Eshwar Nagar"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -224,8 +217,8 @@
                             android:layout_gravity="center"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textColor="@color/black"
                             android:text="Badminton Court"
+                            android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="bold" />
 
@@ -235,8 +228,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:text="Near Block 10, Eshwar Nagar" />
+                            android:text="Near Block 10, Eshwar Nagar"
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
@@ -246,7 +239,17 @@
             </LinearLayout>
 
         </ScrollView>
-    </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="0dp"
+            app:menu="@menu/menu"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>

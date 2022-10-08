@@ -14,6 +14,9 @@
         android:theme="@style/Theme.GrabVenue"
         tools:targetApi="31">
         <activity
+            android:name=".UserBookingHistory"
+            android:exported="false" />
+        <activity
             android:name=".AdminSettings"
             android:exported="false" />
         <activity

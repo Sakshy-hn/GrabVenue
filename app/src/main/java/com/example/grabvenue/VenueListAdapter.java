@@ -1,13 +1,16 @@
 package com.example.grabvenue;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class VenueListAdapter extends BaseAdapter {
 
@@ -15,6 +18,9 @@ public class VenueListAdapter extends BaseAdapter {
     String listVenue[];
     int listLogo[];
     LayoutInflater inflater;
+
+    Button mDialogButton;
+    TextView okay_text, cancel_text;
 
     public VenueListAdapter(Context ctx, String[] venueTitles, int[] venueLogos){
         this.context = ctx;
@@ -45,6 +51,18 @@ public class VenueListAdapter extends BaseAdapter {
         ImageView venueLogo = convertView.findViewById(R.id.venueLogo);
         txtView.setText(listVenue[i]);
         venueLogo.setImageResource(listLogo[i]);
+
+
+
+        View row = inflater.inflate(R.layout.activity_venueitemlist, viewGroup, false);
+        Button bookBtn = (Button) row.findViewById(R.id.bookBtn);
+        bookBtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(context, "Booked", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
         return convertView;
     }
 }

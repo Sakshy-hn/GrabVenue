@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // remove action bar
+        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_main);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             Window window= this.getWindow();
@@ -25,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent in=new Intent(MainActivity.this,SignIn.class);
                 startActivity (in);
             }
-        },3000);
+        },1500);
 
 
 

@@ -14,6 +14,7 @@ public class HomePage extends AppCompatActivity {
 
     ImageButton btn_outdoor;
     ImageButton settingsbtn;
+    ImageButton historyBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,14 @@ public class HomePage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+//        historyBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i = new Intent(HomePage.this, UserBookingHistory.class);
+//                startActivity(i);
+//            }
+//        });
 
     }
 }
