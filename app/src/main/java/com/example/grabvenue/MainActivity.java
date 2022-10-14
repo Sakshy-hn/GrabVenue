@@ -3,6 +3,7 @@ package com.example.grabvenue;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -16,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         // remove action bar
         getSupportActionBar().hide();
+
+        Database g = new Database(this);
+        SQLiteDatabase db = g.getReadableDatabase();
+
 
         setContentView(R.layout.activity_main);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){

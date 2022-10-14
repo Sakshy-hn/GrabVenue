@@ -32,7 +32,6 @@ public class AdminHome extends AppCompatActivity {
         actionBar.setBackgroundDrawable(colorDrawable);
 
 
-
 //        Code redirect from Home page to Add Venue page
         addVenue = (ImageButton) findViewById(R.id.addVenue);
         addVenue.setOnClickListener(new View.OnClickListener() {
